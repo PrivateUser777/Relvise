@@ -1,69 +1,43 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "Roboto";
+  font-family: "Montserrat";
   font-display: swap;
-  src: url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-display: swap;
-  src: url("../fonts/Roboto-ThinItalic.woff") format("woff"), url("../fonts/Roboto-ThinItalic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-display: swap;
-  src: url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.woff2") format("woff2");
+  src: url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "icons";
+  font-family: "Montserrat";
   font-display: swap;
-  src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2#icons") format("woff2");
-  font-weight: normal;
+  src: url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
-  font-display: block;
 }
 
-[class^=_icon-]:before,
-[class*=" _icon-"]:before {
-  font-family: "icons";
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/Montserrat-ExtraBold.woff") format("woff"), url("../fonts/Montserrat-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
   font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-[class^=_icon-]:before,
-[class*=" _icon-"]:before {
-  display: block;
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
 }
 
-._icon-facebook:before {
-  content: "\e900";
-}
-
-._icon-insta:before {
-  content: "\e901";
-}
-
-._icon-tweeter:before {
-  content: "\e902";
-}
-
-._icon-linkedin:before {
-  content: "\e903";
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
 }
 
 * {
@@ -105,7 +79,7 @@ body {
 
 body {
   line-height: 1;
-  font-family: "Roboto";
+  font-family: "Montserrat";
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -114,7 +88,7 @@ body {
 input,
 button,
 textarea {
-  font-family: "Roboto";
+  font-family: "Montserrat";
 }
 
 input::-ms-clear {
@@ -158,8 +132,9 @@ h6 {
 }
 
 body {
-  color: #000;
+  color: #252B42;
   font-size: 14px;
+  font-weight: 700;
 }
 
 body.lock {
@@ -173,7 +148,7 @@ body.lock {
 }
 
 .container {
-  max-width: 1180px;
+  max-width: 1050px;
   margin: 0 auto;
   width: 100%;
 }
@@ -5014,7 +4989,7 @@ left: 0;
 	}
 }*/
 
-@media (max-width: 1192px) {
+@media (max-width: 1062px) {
   .container {
     max-width: 970px;
   }
@@ -5052,7 +5027,7 @@ left: 0;
 
 }
 
- @media (max-width: 1192px){
+ @media (max-width: 1062px){
 
 @supports (-webkit-appearance:none){
 
