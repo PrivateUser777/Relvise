@@ -1,5 +1,8 @@
 .content{
 	flex: 1 1 auto;
+	background: #FAFAFA;
+	position: relative;
+	z-index: -0;
 }
 
 
@@ -170,6 +173,82 @@
 			&_active{
 				color: #FFFFFF;
 			}
+		}
+	}
+}
+// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //
+
+//!Секция Достижения
+// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //
+.adventages {
+	@include adaptiv-value("padding-top", 205, 80, 1);
+	@include adaptiv-value("padding-bottom", 60, 50, 1);
+	
+
+	&__body {
+	}
+
+	&__title {
+		margin-bottom: 10px;
+		@include adaptiv-value("font-size", 40, 32, 1);
+	}
+
+	&__subtitle {
+		margin: 0 auto;
+		margin-bottom: 45px;
+		max-width: 520px;
+	}
+
+	&__row {
+		display: flex;
+		margin: 0 -15px;
+		@media(max-width: $md2 + 'px'){
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+
+	&__margin {
+		padding: 0 15px;
+		flex: 0 1 25%;
+		@media(max-width: $md2 + 'px'){
+			flex: 0 1 33.333%;
+			margin-bottom: 20px;
+		}
+		@media(max-width: $md3 + 'px'){
+			flex: 0 1 50%;
+		}
+		@media(max-width: $md4 + 'px'){
+			flex: 0 1 100%;
+		}
+	}
+
+	&__column {
+		height: 100%;
+		@include adaptiv-value("padding-top", 30, 20, 1);
+		@include adaptiv-value("padding-bottom", 30, 20, 1);
+	}
+
+	.column {
+		text-align: center;
+		background: #ffffff;
+
+		&__img {
+			margin-bottom: 10px;
+		}
+	
+		&__number {
+			margin-bottom: 10px;
+			letter-spacing: 0.2px;
+			line-height: calc(57 / 40 * 100%);
+			@include adaptiv-value("font-size", 40, 35, 1);
+		}
+	
+		&__text {
+			font-size: 16px;
+			line-height: calc(16 / 14 * 100%);
+			letter-spacing: 0.1px;
+			color: #737373;
 		}
 	}
 }
