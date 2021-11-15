@@ -20,8 +20,8 @@ $fontfamily: "Montserrat";
 
 //<ПЕРЕМЕННЫЕ>===========================================================================================================
 $minWidth: 320px;
-$maxWidth: 1080;
-$md1: $maxWidth+12;
+$maxWidth: 1050;
+$md1: $maxWidth+30;
 $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
@@ -34,7 +34,7 @@ body {
 	color: #252B42;
 	font-size: 14px;
 	font-weight: 700;
-	padding: 0 15px;
+	
 
 	&.lock {
 		overflow: hidden;
@@ -48,6 +48,8 @@ body {
 	width: 100%;
 	min-height: 100%;
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 }
 
 //</ОБОЛОЧКА>===========================================================================================================
@@ -57,6 +59,8 @@ body {
 	max-width: $maxWidth + px;
 	margin: 0 auto;
 	width: 100%;
+	padding: 0 15px;
+	
 
 	// @media (max-width: $md1+px) {
 	// 	max-width: 970px;

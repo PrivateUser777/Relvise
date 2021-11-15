@@ -1,6 +1,6 @@
 //<ГОТОВЫЕ КЛАССЫ>====================================================================================================
 
-.ibg {
+._ibg {
 	position: relative;
 	img {
 		position: absolute;
@@ -12,18 +12,18 @@
 	}
 }
 
-body.ie {
-	.ibg {
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-	.ibg img {
-		width: 0;
-		height: 0;
-		opacity: 0;
-		visibility: hidden;
-	}
-}
+// body.ie {
+// 	.ibg {
+// 		background-position: center;
+// 		background-size: cover;
+// 		background-repeat: no-repeat;
+// 	}
+// 	.ibg img {
+// 		width: 0;
+// 		height: 0;
+// 		opacity: 0;
+// 		visibility: hidden;
+// 	}
+// }
 
 //</ГОТОВЫЕ КЛАССЫ>====================================================================================================
