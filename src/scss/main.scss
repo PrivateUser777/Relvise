@@ -105,9 +105,75 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+//!Секция Сервисы
+// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //
+.services {
 
+	&__body {
+		display: flex;
+		margin: 0 -15px;
+		margin-top: -111px;
+		@media(max-width: $md2 + 'px'){
+			flex-wrap: wrap;
+		}
+	}
 
+	&__row{
+		padding: 0 15px;
+		flex: 0 1 33.333%;
+		@media(max-width: $md2 + 'px'){
+			flex: 0 1 50%;
+			margin-bottom: 30px;
+		}
+		@media(max-width: 600px){
+			flex: 0 1 100%;
+		}
+		&_active{
+			@media(max-width: $md2 + 'px'){
+				flex: 0 1 100%;
+				margin-bottom: 0;
+			}
+		}
+	}
 
+	&__column {
+		height: 100%;
+	}
+
+	.column {
+		background: #FFFFFF;
+		box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+		padding: 35px 40px;
+		&_active{
+			background: #0D5C63;
+		}
+
+		&__icon {
+			margin-bottom: 10px;
+		}
+	
+		&__title {
+			font-size: 24px;
+			line-height: calc(32 / 24 * 100%);
+			letter-spacing: 0.1px;
+			margin-bottom: 10px;
+			&_active{
+				color: #FFFFFF;
+			}
+		}
+	
+		&__text {
+			font-weight: 500;
+			line-height: calc(20 / 14 * 100%);
+			letter-spacing: 0.2px;
+			color: #737373;
+			&_active{
+				color: #FFFFFF;
+			}
+		}
+	}
+}
+// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //
 
 
 
