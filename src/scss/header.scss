@@ -91,10 +91,9 @@
 
 		&__burger{
 			display: block;
-			position: absolute;
+			position: fixed;
 			right: 30px;
-			top: 50%;
-			transform: translateY(-50%);
+			top: 25px;
 			width: 30px;
 			span{
 				display: block;
