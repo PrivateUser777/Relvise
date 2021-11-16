@@ -4943,6 +4943,7 @@ body.lock {
 }
 
 .whoweare {
+  background-color: #ffffff;
   padding-top: 100px;
   padding-bottom: 136px;
 }
@@ -5031,6 +5032,32 @@ body.lock {
   line-height: 171.4285714286%;
   letter-spacing: 0.2px;
   color: #737373;
+}
+
+.clients {
+  padding: 50px 0 10px 0;
+}
+
+.clients__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.clients__item {
+  max-width: 151px;
+  margin-bottom: 40px;
+}
+
+.clients__item img {
+  width: 100%;
 }
 
 /*.popup {
@@ -5834,6 +5861,12 @@ left: 0;
 
   .whoweare__video {
     padding-bottom: 70%;
+  }
+
+  .clients__body {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
