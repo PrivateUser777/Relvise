@@ -408,6 +408,7 @@
 	}
 
 	.content {
+		background-color: #ffffff;
 
 		&__title {
 			text-align: left;
@@ -608,6 +609,117 @@
 }
 // // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //
 
+
+// !Секция Cвязаться
+// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //
+.getintouch {
+	padding: 80px 0 0 0;
+	@include adaptiv-value("margin-bottom", 118, 25, 1);
+
+	&__body {
+	}
+
+	&__title {
+		margin-bottom: 10px;
+	}
+
+	&__subtitle {
+		margin: 0 auto;
+		@include adaptiv-value("margin-bottom", 80, 40, 1);
+		max-width: 500px;
+	}
+
+	&__items {
+		display: flex;
+		align-items: center;
+		@media(max-width: $md2 + 'px'){
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+	}
+
+	&__column {
+		flex: 0 1 33.333%;
+		@media(max-width: $md2 + 'px'){
+			margin-bottom: 30px;
+		}
+	}
+
+	.column {
+		background: #FFFFFF;
+		padding: 50px 40px;
+		text-align: center;
+		&_active{
+			background: #252B42;
+			padding: 80px 40px;
+		}
+		@media(max-width: $md2 + 'px'){
+			padding: 50px 40px;
+		}
+		@media(max-width: $md4 + 'px'){
+			padding: 30px 20px;
+		}
+
+		&__icon {
+			width: 72px;
+			margin-bottom: 15px;
+			img{
+				width: 100%;
+			}
+		}
+	
+		&__emails {
+			margin-bottom: 15px;
+			// max-width: 100%;
+		}
+	
+		&__email {
+			color: inherit;
+			font-weight: 600;
+			line-height: calc(24 / 14 * 100%);
+			letter-spacing: 0.2px;
+			&:hover{
+				color: #284ad1;
+			}
+			&_active{
+				color: #FFFFFF;
+			}
+		}
+	
+		&__label {
+			margin-bottom: 25px;
+			font-size: 16px;
+			line-height: calc(24 / 16 * 100%);
+			letter-spacing: 0.1px;
+			&_active{
+				color: #FFFFFF;
+			}
+		}
+	
+		&__button {
+			border: 1px solid #FF7B47;
+			border-radius: 5px;
+			padding: 10px 20px;
+			font-weight: 600;
+			line-height: calc(24 / 14 * 100%);
+			letter-spacing: 0.2px;
+			color: #FF7B47;
+			&:hover{
+				background: #FF7B47;
+				color: #fff;
+			}
+			&_active{
+				border: 1px solid #FFFFFF;
+				color: #fff;
+				&:hover{
+					background: #FFFFFF;
+					color: #FF7B47;
+				}
+			}
+		}
+	}
+}
+// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //
 
 
 
