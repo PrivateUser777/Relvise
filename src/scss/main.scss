@@ -722,7 +722,64 @@
 // // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //
 
 
+// !Секция Консультация
+// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //
+.consulting {
+	padding: 40px 0;
+	background: #fff;
 
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media(max-width: $md3 + 'px'){
+			flex-direction: column;
+		}
+	}
+
+	&__items {
+		padding-right: 10px;
+		@media(max-width: $md3 + 'px'){
+			padding-right: 0;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+	}
+
+	&__title {
+		font-size: 24px;
+		line-height: calc(32 / 24 * 100%);
+		letter-spacing: 0.1px;
+		margin-bottom: 10px;
+	}
+
+	&__desk {
+		font-weight: 500;
+		line-height: calc(20 / 14 * 100%);
+		letter-spacing: 0.2px;
+		color: #737373;
+	}
+
+	&__button {
+		display: block;
+		background: #FF7B47;
+		border-radius: 5px;
+		text-align: center;
+		padding: 15px 40px;
+		line-height: calc(28 / 14 * 100%);
+		letter-spacing: 0.2px;
+		color: #FFFFFF;
+		&:hover{
+			background: #ffffff;
+			color: #FF7B47;
+			border: 1px solid #FF7B47;
+		}
+		@media(max-width: $md4 + 'px'){
+			align-self: stretch;
+		}
+	}
+}
+// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //// // // // // //
 
 
 
