@@ -1,20 +1,155 @@
 .footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: rgb(58, 58, 58);
-	padding: 50px 0;
 
+	&__main {
+		background: #17213C;
+	}
 
-	&__body{
+	&__row{
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		padding: 16px 0 10px 0;
+		margin: 0 -15px;
+		@media(max-width: $md2 + 'px'){
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+		@media(max-width: 600px){
+			justify-content: space-between;
+		}
 	}
 
-	&__text {
-		font-size: 35px;
-		color: white;
+	&__body {
+		flex: 0 1 16.666%;
+		padding: 0 15px;
+		margin-bottom: 30px;
+		&:last-child{
+			flex: 0 1 33.333%;
+		}
+		@media(max-width: $md2 + 'px'){
+			flex: 0 1 33.333%;
+		}
+		@media(max-width: 600px){
+			flex: 0 1 50%;
+		}
 	}
+
+	&__column {
+		
+	}
+
+	&__label {
+		font-size: 16px;
+		line-height: calc(24 / 16 * 100%);
+		letter-spacing: 0.1px;
+		color: #FFFFFF;
+		margin-bottom: 20px;
+
+		@media(max-width: $md4 + 'px'){
+			font-weight: 600;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__menu {
+	}
+
+	&__contacts {
+		a{
+			display: inline-block;
+			
+			font-weight: 600;
+			line-height: calc(24 / 14 * 100%);
+			letter-spacing: 0.2px;
+			color: #FFFFFF;
+			margin-bottom: 15px;
+			padding-left: 35px;
+			&:hover{
+				color: rgb(127, 92, 255);
+			}
+		}
+	}
+
+	&__number {
+		background: url('../img/FooterTop/icon01.svg') left top no-repeat;
+	}
+
+	&__map {
+		background: url('../img/FooterTop/icon02.svg') left top no-repeat;
+	}
+
+	&__email {
+		background: url('../img/FooterTop/icon03.svg') left top no-repeat;
+	}
+
+	&__bottom {
+	}
+
+	.menu {
+
+		&__items {
+		}
+	
+		&__item {
+			margin-bottom: 10px;
+			@media(max-width: $md4 + 'px'){
+				margin-bottom: 5px;
+			}
+		}
+	
+		&__link {
+			font-weight: 600;
+			line-height: calc(24 / 14 * 100%);
+			letter-spacing: 0.2px;
+			color: #FFFFFF;
+			&:hover{
+				color: rgb(127, 92, 255);
+			}
+			@media(max-width: $md4 + 'px'){
+				font-weight: 500;
+			}
+		}
+	}
+
+	.bottom-footer {
+		background: #fff;
+		padding: 60px 0 25px 0;
+
+		&__body {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			@media(max-width: $md3 + 'px'){
+				flex-direction: column;
+			}
+		}
+	
+		&__desk {
+			font-weight: 600;
+			line-height: 171%;
+			letter-spacing: 0.2px;
+			color: #737373;
+			@media(max-width: $md3 + 'px'){
+				text-align: center;
+				margin-bottom: 20px;
+			}
+		}
+	
+		&__sicial {
+			margin: 0 40px;
+		}
+	
+		&__link {
+			display: inline-block;
+			margin-right: 20px;
+			width: 24px;
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+
+		&__img {
+			width: 100%;
+		}
+	}
+	
 }
 
