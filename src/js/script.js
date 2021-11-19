@@ -2,18 +2,10 @@
 
 @@include('jquery-3.5.1.min.js')
 
+
 window.addEventListener('DOMContentLoaded', () => {
 	
 	
-
-
-
-
-
-
-
-
-
 //!Меню бургер
 // // // // // // // // // // // // // // // // // // // // //// // // // // // // // // // // // // // // // //
 	const headerList = document.querySelector('.header__list');
@@ -31,6 +23,23 @@ window.addEventListener('DOMContentLoaded', () => {
 			headerList.classList.toggle('header__list_active');
 		});
 	}); 
+// // // // // // // // // // // // // // // // // // // // //// // // // // // // // // // // // // // // // //
+
+
+//!Плавный скрол до элементов с якорем
+// // // // // // // // // // // // // // // // // // // // //// // // // // // // // // // // // // // // // //
+const anchors = document.querySelectorAll('a[href *="#"]');
+
+for(let anchor of anchors) {
+	anchor.addEventListener('click', function(event) {
+		event.preventDefault();
+		const blockID = anchor.getAttribute('href')
+		document.querySelector('' + blockID).scrollIntoView({
+			behavior: "smooth",
+			block: "start"
+		});
+	});
+}
 // // // // // // // // // // // // // // // // // // // // //// // // // // // // // // // // // // // // // //
 
 
@@ -86,12 +95,14 @@ window.addEventListener('DOMContentLoaded', () => {
 	
 //!Код к спойлерам
 // // // // // // // // // // // // // // // // // // // // //// // // // // // // // // // // // // // // // //
-/* $('.spoilers__title').click(function () {
-		if ($('.spoilers').hasClass('one')) {
-			$('.spoilers__title').not($(this)).removeClass('active');
-			$('.spoilers__text').not($(this).next()).slideUp(300);
-		}
-		$(this).toggleClass('active').next().slideToggle(300);
-	});*/
+//  $('.spoilers__title').click(function () {
+// 		if ($('.spoilers').hasClass('one')) {
+// 			$('.spoilers__title').not($(this)).removeClass('active');
+// 			$('.spoilers__text').not($(this).next()).slideUp(300);
+// 		}
+// 		$(this).toggleClass('active').next().slideToggle(300);
+// 	});
 // // // // // // // // // // // // // // // // // // // // //// // // // // // // // // // // // // // // // //
+
+
 });
